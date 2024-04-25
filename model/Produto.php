@@ -1,3 +1,5 @@
+<?php
+
 class Produto{
     private $codigo;
     private $descricao;
@@ -16,7 +18,7 @@ class Produto{
     }
 
     public function getCodigo(){
-        return $this->$codigo;
+        return $this->codigo;
     }
 
     public function setDescricao($descricao){
@@ -24,7 +26,7 @@ class Produto{
     }
 
     public function getDescricao(){
-        return $this->$descricao;
+        return $this->descricao;
     }
 
     public function setQuantidade($quantidade){
@@ -32,7 +34,7 @@ class Produto{
     }
 
     public function getQuantidade(){
-        return $this->$quantidade;
+        return $this->quantidade;
     }
 
     public function setValor($valor){
@@ -40,7 +42,7 @@ class Produto{
     }
 
     public function getValor(){
-        return $this->$valor;
+        return $this->valor;
     }
 
     public function toString(){
