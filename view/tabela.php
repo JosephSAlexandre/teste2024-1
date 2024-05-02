@@ -1,22 +1,4 @@
-<?php
-
-if(isset($_REQUEST['produtos'])){
-    $produtos = $_REQUEST['produtos'];
-} else {
-    echo "O array de produtos não foi recuperado";
-}
-
-?>
-
-<!DOCTIPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Detalhes do Produto</title>
-    </head>
-
-    <body>
-        <table>
+<table>
             <tr>
                 <th>Codigo</th>
                 <th>Descricao</th>
@@ -32,5 +14,3 @@ if(isset($_REQUEST['produtos'])){
             </tr>
             <?php endforeach; ?>
         </table>
-    </body>
-</html>
