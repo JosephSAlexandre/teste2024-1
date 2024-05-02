@@ -25,6 +25,9 @@ class BDProduto{
         $query->execute([
             'codigo' => $id,
         ]);
+
+        $produto = $query->fetchObject('Produto');
+        return $produto;
     }
 
     public function buscar_produtos(){
