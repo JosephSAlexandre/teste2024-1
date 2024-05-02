@@ -8,7 +8,7 @@ class BDProduto{
     }
 
     public function salvar(Produto $produto){
-        $sql = "INSERT INTO produto (dscricao, quantidade, valor)
+        $sql = "INSERT INTO produto (descricao, quantidade, valor)
                 VALUES (:descricao, :quantidade, :valor)";
         
         $query = $this->pdo->prepare($sql);
